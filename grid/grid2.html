@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid2</title>
+    <style>
+         html,body{
+            height: 100%;
+            width: 100%;
+        }
+        .container{
+            width: 80%;
+            height: 80%;
+            border: 2px solid black;
+            display: grid;
+            grid-template-areas:"header header header"
+                                "article section aside"
+                                "footer footer footer";
+        }
+        .item{
+            height: 50px;
+            width: 50px;
+            border: 2px solid purple;
+            /* background-color: antiquewhite; */
+        }
+        .item1{
+            grid-area: article;
+        }
+        .item4{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
